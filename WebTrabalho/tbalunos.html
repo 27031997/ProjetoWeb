@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabela Alunos</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Início</a></li>
+					<li><a href="treinos.html">Treinos</a></li>
+					<li><a href="IMC.html">IMC</a></li>
+					<li><a href="ICQ.html">ICQ</a></li>
+				</ul>
+			<a class="cadastro" href="tabela-alunos.html">Lista Alunos</a>
+			<br>
+			<a class="cadastro" href="historico-aluno.html">Histórico Alunos</a>
+			
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<form class="tbalunos" action="#" th:action="@{/tabelaController}"  method="post">
+			<section>
+					<h2 class="titulo-principal">Meus alunos</h2>
+					<label for="filtrar-tabela">Filtre:</label>
+					<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do aluno">
+		
+					<button id="buscar-alunos" class="">Buscar</button>
+				
+					<table>
+						<thead>
+							<tr>
+								<th>Nome</th>
+								<th>Peso</th>
+								<th>Altura</th>
+								<th>IMC</th>
+								<th>Cintura</th>
+								<th>Quadril</th>
+								<th>ICQ</th>
+								<th>Tipo de plano</th>
+							</tr>
+						</thead>
+						<tbody id="tabela-aluno">
+							<tr class="aluno" id="primeiro-aluno">
+								<td class="info-nome"><a href="historico-aluno.html">Anna Inácio</a></td>
+								<td class="info-peso">60</td>
+								<td class="info-altura">1.55 cm</td>
+								<td class="info-imc">NORMAL</td>
+								<td class="info-cintura">42 cm</td>
+								<td class="info-quadril">50 cm</td>
+								<td class="info-icq">BAIXO RISCO</td>
+								<td class="info-plano">Plano Anual</td>
+							</tr>
+							<tr class="aluno" id="primeiro-aluno">
+								<td class="info-nome"><a href="historico-aluno.html">Maria Cristina</a></td>
+								<td class="info-peso">80</td>
+								<td class="info-altura">1.70 cm</td>
+								<td class="info-imc">SOBREPESO - OBESIDADE GRAU I</td>
+								<td class="info-cintura">60 cm</td>
+								<td class="info-quadril">80 cm</td>
+								<td class="info-icq">BAIXO RISCO</td>
+								<td class="info-plano">Plano Semestral</td>
+							</tr>
+						</tbody>
+					</table>
+			</section>
+		</form>
+		
+
+		*Para excluir um aluno, dê dois cliques em cima dele
+		
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

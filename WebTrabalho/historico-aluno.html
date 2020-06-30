@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Histórico aluno</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Início</a></li>
+					<li><a href="treinos.html">Treinos</a></li>
+					<li><a href="IMC.html">IMC</a></li>
+					<li><a href="ICQ.html">ICQ</a></li>
+				</ul>
+			<a class="cadastro" href="tbalunos.html">Lista Alunos</a>
+			<br>
+			<a class="cadastro" href="historico-aluno.html">Histórico Alunos</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<form class="historico-aluno" action="#" th:action="@{/historicoController}"  method="post">
+			<section>
+				<h2 class="titulo-principal">Histórico - Meus alunos</h2>
+				<div class="caixa-aluno">
+					<input type="text" name="nome" id="nome-aluno" placeholder="ANNA C F INACIO" disabled="">
+				</div>
+	
+				<table>
+					<thead>
+						<tr>
+							<th>IMC</th>
+							<th>ICQ</th>
+							<th>Plano</th>
+							<th>Observação</th>
+							<th>Data</th>
+						</tr>
+					</thead>
+					<tbody id="hist-aluno">
+						<tr class="aluno" id="lista">
+							<td class="hist-imc">NORMAL</td>
+							<td class="hist-icq">BAIXO RISCO</td>
+							<td class="hist-plano">Plano Anual</td>
+							<td class="hist-obs">
+								<textarea placeholder="Digite seu texto"></textarea> 
+								<button>OK</button>
+							</td>
+							<td class="hist-data">14/05/2020</td>
+						</tr>
+						<tr class="aluno" id="lista">
+							<td class="hist-imc">NORMAL</td>
+							<td class="hist-icq">BAIXO RISCO</td>
+							<td class="hist-plano">Plano Anual</td>
+							<td class="hist-obs">
+								<textarea placeholder="Digite seu texto"></textarea> 
+								<button>OK</button>
+							</td>
+							<td class="hist-data">21/05/2020</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</form>
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

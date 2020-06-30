@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastre-se</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+			
+				<ul>
+					<li><a href="home1.html">Início</a></li>
+					<li><a href="loginHome.html">Login</a></li>
+					<li><a href="cadastrando.html">Cadastre-se</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+	</header>
+	  
+	<main>
+	
+	  
+		<section class="produtos">
+			<h1 class="titulo-principal">Planos</h1>
+			<ul class="planos">
+				<li>
+					<a href="cadastrando.html#cadastrando">
+					<h2>Acesso Anual</h2>
+					<img src="">
+					<p class="plano-descricao">Pacote válido por 12 meses </p>
+					<p class="plano-preco">R$ 12 x 40,00*</p>
+					<p>sem juros ou R$480,00 a.v</p>
+					</a>
+				</li>
+				<li>
+					<a href="cadastrando.html#cadastrando">
+					<h2>Acesso Semestral</h2>
+					<img src="">
+					<p class="plano-descricao">Pacote válido por 6 meses</p>
+					<p class="plano-preco">R$ 6 x 60,00*</p>
+					<p>sem juros ou R$360,00 a.v</p>
+					</a>
+				</li>
+				<li>
+					<a href="cadastrando.html#cadastrando">
+					<h2>Acesso Mensal</h2>
+					<img src="">
+					<p class="plano-descricao">Pacote válido por 30 dias</p>
+					<p class="plano-preco">R$ 400,00*</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+		<div id="cadastrando">
+			<form  class="cadastrando" action="#" th:action="@{/cadastroController}" th:object="${cadastro}" method="post">
+				<h1 class="titulo-principal">Cadastre-se</h1>
+				<div class="caixa-cadastro">
+					<p>Nome</p>
+					<input type="text" placeholder="Nome Completo" th:field="*{nome}">
+					<p>E-mail</p>
+					<input type="email" placeholder="exemplo@exemplo.com.br" th:field="*{email}">
+					<p>Celular</p>
+					<input type="number" placeholder="(00) 00000-0000" th:field="*{celular}">
+					<p>CPF</p>
+					<input type="number" name="" th:field="*{cpf}">
+					
+					
+					<div class="botao">
+						<button>Calcular IMC</button>
+						<button>Calcular ICQ</button>
+					</div>
+					
+				  	
+				</div>
+	  		
+				<p><img class="imagem-seguranca" src="./resources/imagens/seguro.png">
+				Seus dados serão mantidos em sigilo</p>
+				<div class="caixa-cadastro">
+					<p>SELECIONE UM MÉTODO DE PAGAMENTO</p>
+					<hr>
+				</div>
+				<div class="pagamento">
+					
+					<p>Número do Cartão</p>
+					<input type="number" name="">
+					<p>Validade (MM/AA)</p>
+					<input type="number" name="">
+					<p>Cod.Segurança</p>
+					<input type="number" name="">
+					<p>Nome Impresso no Cartão</p>
+					<input type="text" name="">
+				</div>
+		
+		
+				<button type="submit" name="cmd" value="cadastrar">Pagar e receber agora</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

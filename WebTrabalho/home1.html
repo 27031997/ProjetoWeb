@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home1.html">Início</a></li>
+					<li><a href="loginHome.html">Login</a></li>
+					<li><a href="cadastrando.html">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<img id="banner" src="./resources/imagens/banner.jpg">
+	<main>
+		<form class="home1" action="#" th:action="@{/home1Controller}"  method="post">
+			<section class="principal">
+				<h1 class="titulo-principal">Sobre AKFit</h1>
+				<p class="texto-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<section class="produtos">
+				<h1 class="titulo-principal">Planos</h1>
+				<ul class="planos">
+					<li>
+						<a href="cadastrando.html#cadastrando">
+						<h2>Acesso Anual</h2>
+						<img src="">
+						<p class="plano-descricao">Pacote válido por 12 meses </p>
+						<p class="plano-preco">R$ 12 x 40,00*</p>
+						<p>sem juros ou R$480,00 a.v</p>
+						</a>
+					</li>
+					<li>
+						<a href="cadastrando.html#cadastrando">
+						<h2>Acesso Semestral</h2>
+						<img src="">
+						<p class="plano-descricao">Pacote válido por 6 meses</p>
+						<p class="plano-preco">R$ 6 x 60,00*</p>
+						<p>sem juros ou R$360,00 a.v</p>
+						</a>
+					</li>
+					<li>
+						<a href="cadastrando.html#cadastrando">
+						<h2>Acesso Mensal</h2>
+						<img src="">
+						<p class="plano-descricao">Pacote válido por 30 dias</p>
+						<p class="plano-preco">R$ 400,00*</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="corpo">
+				<h1 class="titulo-principal">O que você encontrará no AKFit</h1>
+				<div class="caixa-itens">
+					<div class="iten">
+						<div class="numero"><img src="./resources/imagens/1.png"></div>
+						<div class="titulo-caixa"><h3>Funcional</h3></div>
+						<p class="texto-caixa">Melhora a funcionalidade do seu corpo (mobilidade, estabilidade, equilibrio e agilidade), aumenta a resistência muscular, força, potência e condicionamento fisico.</p>
+					</div>
+	
+					<div class="iten">
+						<div class="numero"><img src="./resources/imagens/2.png"></div>
+						<div class="titulo-caixa"><h3>HIIT</h3></div>
+						<p class="texto-caixa">Treino Intervalado de Alta Intensidade. É um tipo de treino usado para condicionamento físico onde o praticante faz exercícios intercalados de alta intensidade e baixa intensidade.</p>
+					</div>
+					<div class="iten">
+						<div class="numero"><img src="./resources/imagens/3.png"></div>
+						<div class="titulo-caixa"><h3>Glúteo e Pernas</h3></div>
+						<p class="texto-caixa">Treino com o peso corporal com objetivo de desenvolver, tonificar, hipertrofiar e aumentar a massa muscular e musculatura dos glúteos e membros inferiores.</p>
+					</div>
+					<div class="iten">
+						<div class="numero"><img src="./resources/imagens/4.png"></div>
+						<div class="titulo-caixa"><h3>Braços e Peito</h3></div>
+						<p class="texto-caixa">Melhora a funcionalidade do seu corpo (mobilidade, estabilidade, equilibrio e agilidade), aumenta a resistência muscular, força, potência e condicionamento fisico.</p>
+					</div>
+					<div class="iten">
+						<div class="numero"><img src="./resources/imagens/5.png"></div>
+						<div class="titulo-caixa"><h3>Abdômen</h3></div>
+						<p class="texto-caixa">Treino especifico para melhorar a força, resistência muscular e definição das musculaturas do abdômen.</p>
+					</div>
+				</div>
+			</section>
+			<form class="garantia">
+				<h1 class="titulo-principal">Satisfação garantida ou seu dinheiro de volta</h1>
+				<h3 class="sub-titulo-garantia">Garantia incondicional de 7 dias!</h3>
+				<h3>Até 7 dias depois do pagamento, você pode cancelar por qualquer motivo e devolvemos todo o valor pago.</h3>
+				<div class="selo-garantia">
+				<img src="./resources/imagens/selo.png">
+				<br>
+				<button> Cadastre-se </button>
+				</div>
+			</form>
+		</form>
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

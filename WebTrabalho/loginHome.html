@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home1.html">Início</a></li>
+					<li><a href="loginHome.html">Login</a></li>
+					<li><a href="cadastrando.html">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<form class="login" action="#" th:action="@{/loginController}" th:object="${login}" method="post">
+			<h1 class="titulo-principal">Login</h1>
+			<div class="caixa-login">
+				<p>Login</p>
+				<input type="email" placeholder="exemplo@exemplo.com.br" th:field="*{login}">
+				<p>Password</p>
+				<input type="password" placeholder="Senha" th:field="*{senha}">
+				<p><a id="italico" href="">Esqueci minha senha</a></p>
+				<p><a id="italico" href="cadastro.html">Cadastre-se</a></p>
+				<button type="submit" name="cmd" value="entrar">Entrar</button>
+				
+				
+				<div class="caixa-preta">
+					<p>A primeira senha de acesso é enviada por e-mail no momento da adesão, caso tenha esquecido ela, clique em "esqueci minha senha".</p>
+				</div>
+			</div>
+		</form>
+	
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Funcional Iniciante</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Início</a></li>
+					<li><a href="treinos.html">Treinos</a></li>
+					<li><a href="IMC.html">IMC</a></li>
+					<li><a href="ICQ.html">ICQ</a></li>
+				</ul>
+			<a class="cadastro" href="tbalunos.html">Lista Alunos</a>
+			<br>
+			<a class="cadastro" href="historico-aluno.html">Histórico Alunos</a>
+			
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<form class="videos_funcional_iniciante" action="#" th:action="@{/videosController}"  method="post">
+	
+			<div class="video">
+				<h1 class="titulo-principal">Funcional Iniciante</h1>
+				<div class="botoes">
+					<button class="botao-adicionar"> + </button>
+					<button class="botao-excluir"> x </button>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/GOSf1cOp8KE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="botoes">
+					<button class="botao-adicionar"> + </button>
+					<button class="botao-excluir"> x </button>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hWeWg2yvC_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="botoes">
+					<button class="botao-adicionar"> + </button>
+					<button class="botao-excluir"> x </button>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYxy4TBgJS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="botoes">
+					<button class="botao-adicionar"> + </button>
+					<button class="botao-excluir"> x </button>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eWUABj2dBpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="botoes">
+					<button class="botao-adicionar"> + </button>
+					<button class="botao-excluir"> x </button>
+				</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/5nKE9yjxd0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			</div>
+		</form>
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Treinos</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/estilo.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><img src="./resources/imagens/logo2.png"></h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Início</a></li>
+					<li><a href="treinos.html">Treinos</a></li>
+					<li><a href="IMC.html">IMC</a></li>
+					<li><a href="ICQ.html">ICQ</a></li>
+				</ul>
+			<a class="cadastro" href="tbalunos.html">Lista Alunos</a>
+			<br>
+			<a class="cadastro" href="historico-aluno.html">Histórico Alunos</a>
+			</nav>
+		</div>
+	</header>
+	<img id="banner" src="./resources/imagens/treinos.jpg">
+	<main>
+		<form class="treinos" action="#" th:action="@{/treinoController}"  method="post">
+			
+			<section>
+				<h1 class="titulo-principal">Nossos Treinos</h1>
+				<ul class="planos">
+					<li>
+						<h3>Funcional</h3>
+						<ul id="caixinhas">
+							<li>
+								<a href="videos_funcional_iniciante.html">Iniciante</a>
+							</li>
+							<li>
+								<a href="videos_funcional_intermediario.html">Intermediário</a>
+							</li>
+							<li>
+								<a href="videos_funcional_avancado.html">Avançado</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<h3>HIIT</h3>
+						<ul class="caixinhas">
+							<li>
+								<a href="videos_hiit_iniciante.html">Iniciante</a>
+							</li>
+							<li>
+								<a href="videos_hiit_intermediario.html">Intermediário</a>
+							</li>
+							<li>
+								<a href="videos_hiit_avancado.html">Avançado</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Glúteo e Pernas</h3>
+						<ul class="caixinhas">
+							<li>
+								<a href="videos_gp_iniciante.html">Iniciante</a>
+							</li>
+							<li>
+								<a href="videos_gp_intermediario.html">Intermediário</a>
+							</li>
+							<li>
+								<a href="videos_gp_avancado.html">Avançado</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="planos">
+					<li>
+						<h3>Braços e Peito</h3>
+						<ul class="caixinhas">
+							<li>
+								<a href="">Iniciante</a>
+							</li>
+							<li>
+								<a href="">Intermediário</a>
+							</li>
+							<li>
+								<a href="">Avançado</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Abdomên</h3>
+						<ul class="caixinhas">
+							<li>
+								<a href="">Iniciante</a>
+							</li>
+							<li>
+								<a href="">Intermediário</a>
+							</li>
+							<li>
+								<a href="">Avançado</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Desafios</h3>
+						<ul class="caixinhas">
+							<li>
+								<a href="">Desafio 1</a>
+							</li>
+							<li>
+								<a href="">Desafio 2</a>
+							</li>
+							<li>
+								<a href="">Desafio 3</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</form>
+	</main>
+	<footer>
+		<div class="footer">
+			<img src="./resources/imagens/footer.png">
+			<p class="copyright">&copy; Copyright AKFit</p>
+		</div>
+	</footer>
+</body>
+</html>
